@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition License
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magentocommerce.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_default
+ * @copyright   Copyright (c) 2011 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://www.magentocommerce.com/license/enterprise-edition
+ */
+-->
+
+<layout>
+    <adminhtml_system_config_edit>
+         <reference name="head">
+            <action method="addJs"><script>indexa/nfe/nfe.js</script></action>
+            <action method="addJs"><script>indexa/nfe/initadminsys.js</script></action>
+         </reference>
+    </adminhtml_system_config_edit>
+    <adminhtml_sales_order_address>
+         <reference name="head">
+            <action method="addJs"><script>indexa/nfe/nfe.js</script></action>
+            <action method="addJs"><script>indexa/nfe/initfront.js</script></action>
+         </reference>
+    </adminhtml_sales_order_address>
+    <adminhtml_sales_order_view>
+        <reference name="order_info">
+           <action method="setTemplate"><template>indexa_nfe/sales/order/view/info.phtml</template></action>
+        </reference>
+     </adminhtml_sales_order_view>
+     
+     <nfe_adminhtml_nfe_edit>
+          <reference name="content">
+            <block type="indexa_nfe/adminhtml_sales_order_edit" name="indexa_nfe_edit">
+                <block type="indexa_nfe/adminhtml_sales_order_edit_form" name="form"></block>
+            </block>
+         </reference>
+     </nfe_adminhtml_nfe_edit>
+</layout>

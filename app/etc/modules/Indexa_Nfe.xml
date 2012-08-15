@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Indexa - NF-e. 
+ *
+ * @title      Magento Indexa NF-e
+ * @category   General
+ * @package    Indexa_Nfe
+ * @author     Indexa Development Team <desenvolvimento@indexainternet.com.br>
+ * @copyright  Copyright (c) 2011 Indexa - http://www.indexainternet.com.br
+ */
+ -->
+<config>
+    <modules>
+        <Indexa_Nfe>
+            <active>true</active>
+            <codePool>local</codePool>            
+        </Indexa_Nfe>
+    </modules>
+</config>

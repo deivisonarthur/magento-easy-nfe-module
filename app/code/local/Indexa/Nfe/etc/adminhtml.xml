@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Indexa - NF-e. 
+ *
+ * @title      Magento Indexa NF-e
+ * @category   General
+ * @package    Indexa_Nfe
+ * @author     Indexa Development Team <desenvolvimento@indexainternet.com.br>
+ * @copyright  Copyright (c) 2011 Indexa - http://www.indexainternet.com.br
+ */
+-->
+
+<config>    
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <indexa_nfe>
+                                        <title>NF-e</title>
+                                    </indexa_nfe>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
