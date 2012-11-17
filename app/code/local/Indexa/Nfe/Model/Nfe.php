@@ -14,20 +14,20 @@ class Indexa_Nfe_Model_Nfe {
     /**
      * staging server URLs
      */    
-    const NFE_TEST_REQUEST_PUT_URL = 'http://staging.doit.com.br:8080/easy-nfe-server/nfe';
+    const NFE_TEST_REQUEST_PUT_URL =  'https://staging.doit.com.br/easy-nfe-server/nfe';
     
-    const NFE_TEST_REQUEST_URL =     'http://staging.doit.com.br:8080/easy-nfe-server/nfe/request/';
+    const NFE_TEST_REQUEST_URL =      'https://staging.doit.com.br/easy-nfe-server/nfe/request/';
     
-    const NFE_TEST_REQUEST_URL_BASE = 'http://staging.doit.com.br:8080/easy-nfe-server/';
+    const NFE_TEST_REQUEST_URL_BASE = 'https://staging.doit.com.br/easy-nfe-server/';
     
     /**
      * server URLs
      */
-    const NFE_REQUEST_PUT_URL = 'http://easynfe.doit.com.br/nfe';
+    const NFE_REQUEST_PUT_URL = 'https://easynfe.doit.com.br/nfe';
     
-    const NFE_REQUEST_URL =     'http://easynfe.doit.com.br/nfe/request/';
+    const NFE_REQUEST_URL =     'https://easynfe.doit.com.br/nfe/request/';
     
-    const NFE_REQUEST_URL_BASE = 'http://easynfe.doit.com.br/';
+    const NFE_REQUEST_URL_BASE = 'https://easynfe.doit.com.br/';
     
     
     const NFE_SERIE = '11';
