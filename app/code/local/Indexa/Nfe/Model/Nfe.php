@@ -23,11 +23,11 @@ class Indexa_Nfe_Model_Nfe {
     /**
      * server URLs
      */
-    const NFE_REQUEST_PUT_URL = 'http://services.doit.com.br:8080/easy-nfe-server/nfe';
+    const NFE_REQUEST_PUT_URL = 'http://easynfe.doit.com.br/nfe';
     
-    const NFE_REQUEST_URL =     'http://services.doit.com.br:8080/easy-nfe-server/nfe/request/';
+    const NFE_REQUEST_URL =     'http://easynfe.doit.com.br/nfe/request/';
     
-    const NFE_REQUEST_URL_BASE = 'http://services.doit.com.br:8080/easy-nfe-server/';
+    const NFE_REQUEST_URL_BASE = 'http://easynfe.doit.com.br/';
     
     
     const NFE_SERIE = '11';
