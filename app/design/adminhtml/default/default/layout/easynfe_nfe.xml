@@ -29,26 +29,26 @@
 <layout>
     <adminhtml_system_config_edit>
          <reference name="head">
-            <action method="addJs"><script>indexa/nfe/nfe.js</script></action>
-            <action method="addJs"><script>indexa/nfe/initadminsys.js</script></action>
+            <action method="addJs"><script>easynfe/nfe/nfe.js</script></action>
+            <action method="addJs"><script>easynfe/nfe/initadminsys.js</script></action>
          </reference>
     </adminhtml_system_config_edit>
     <adminhtml_sales_order_address>
          <reference name="head">
-            <action method="addJs"><script>indexa/nfe/nfe.js</script></action>
-            <action method="addJs"><script>indexa/nfe/initfront.js</script></action>
+            <action method="addJs"><script>easynfe/nfe/nfe.js</script></action>
+            <action method="addJs"><script>easynfe/nfe/initfront.js</script></action>
          </reference>
     </adminhtml_sales_order_address>
     <adminhtml_sales_order_view>
         <reference name="order_info">
-           <action method="setTemplate"><template>indexa_nfe/sales/order/view/info.phtml</template></action>
+           <action method="setTemplate"><template>easynfe_nfe/sales/order/view/info.phtml</template></action>
         </reference>
      </adminhtml_sales_order_view>
      
      <nfe_adminhtml_nfe_edit>
           <reference name="content">
-            <block type="indexa_nfe/adminhtml_sales_order_edit" name="indexa_nfe_edit">
-                <block type="indexa_nfe/adminhtml_sales_order_edit_form" name="form"></block>
+            <block type="easynfe_nfe/adminhtml_sales_order_edit" name="easynfe_nfe_edit">
+                <block type="easynfe_nfe/adminhtml_sales_order_edit_form" name="form"></block>
             </block>
          </reference>
      </nfe_adminhtml_nfe_edit>

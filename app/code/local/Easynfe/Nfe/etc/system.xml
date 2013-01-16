@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Easynfe - NF-e. 
+ *
+ * @title      Magento Easynfe NF-e
+ * @category   General
+ * @package    Easynfe_Nfe
+ * @author     Indexa Development Team <desenvolvimento@indexainternet.com.br>
+ * @copyright  Copyright (c) 2011 Indexa - http://www.indexainternet.com.br
+ */
+-->
+
+<config>
+     <tabs>
+        <easynfe translate="label">
+            <label>EasyNFe</label>
+            <sort_order>999999</sort_order>
+        </easynfe>
+    </tabs>
+    <sections>
+        <easynfe_nfe translate="label" module="nfe">
+            <label>NF-e</label>
+            <tab>easynfe</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>20</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <geral translate="label" >
+                    <label>Geral</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <status translate="label">
+                            <label>Habilitado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </status>
+                        <versao translate="label">
+                            <label>Versão</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </versao>
+                    </fields>
+                </geral>
+                <config translate="label" >
+                    <label>Informações de Identificação NF-e</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <cuf translate="label">
+                            <label>UF</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_directory_country_region</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Código da UF do emitente do Documento Fiscal]]></comment>
+                        </cuf>
+                        <cmunfg translate="label">
+                            <label>Município Gerador</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_directory_country_region_city</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Código do Município de Ocorrência do Fato Gerador]]></comment> 
+                        </cmunfg>
+                        <!--<cnf translate="label">
+                            <label>Chave de Acesso </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>        
+                            <comment><![CDATA[Código Numérico que compõe  a Chave de Acesso ]]></comment>
+                        </cnf>-->
+                        
+                        <mod translate="label">
+                            <label>Modelo Fiscal</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment><![CDATA[Código do Modelo do Documento Fiscal]]></comment> 
+                        </mod>      
+                        <natop translate="label">
+                            <label>Natureza da Operação</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_config_natop</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </natop>
+                        <tpimp translate="label">
+                            <label>Tipo da Impressão</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_config_tpimp</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                             <comment><![CDATA[Define o formato utilizado para impressão]]></comment> 
+                        </tpimp>
+                        <tpamb translate="label">
+                            <label>Identificação do Ambiente</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_config_ambiente</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </tpamb>
+                    </fields>
+                </config>
+                <emit translate="label" >
+                    <label>Dados do Emitente</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <cnpj translate="label">
+                            <label>CNPJ</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cnpj>
+                        <nome translate="label">
+                            <label>Nome</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </nome>
+                        <fone translate="label">
+                            <label>Fone</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </fone>
+                        <ie translate="label">
+                            <label>Inscrição Estadual</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </ie>
+                        
+                         <cpais translate="label">
+                            <label>Código do País</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_directory_country</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cpais>
+                         <cuf translate="label">
+                            <label>UF</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_directory_country_region</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cuf>
+                        <cmun translate="label">
+                            <label>Município</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_directory_country_region_city</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cmun>
+                        <xlgr translate="label">
+                            <label>Endereço</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </xlgr>
+                        <numero translate="label">
+                            <label>Número</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </numero>
+                        <bairro translate="label">
+                            <label>Bairro</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bairro>
+                        <cep translate="label">
+                            <label>CEP</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cep>
+                        <crt translate="label">
+                            <label>Código de Regime Tributário </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easynfe_nfe/source_config_crt</source_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </crt>
+                    </fields>
+                </emit>
+                <email>
+                    <label>E-mails</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <status translate="label">
+                            <label>Enviar E-mail</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </status>
+                        <email translate="label">
+                            <label>E-mail do Remetente</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </email>
+                        <nome translate="label">
+                            <label>Nome do Remetente</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </nome>
+                        <cc translate="label">
+                            <label>Enviar cópia para</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cc>
+                    </fields>
+                </email>
+                    
+                
+                <acesso translate="label" >
+                    <label>Acesso</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <chave translate="label">
+                            <label>Chave</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </chave>
+                        <pass translate="label">
+                            <label>Senha</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </pass>
+                        <importcert translate="label">
+                          <label>Import</label>
+                          <frontend_type>import</frontend_type>
+                          <backend_model>easynfe_nfe_model_system_config_certificado</backend_model>
+                          <sort_order>15</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>0</show_in_website>
+                          <show_in_store>0</show_in_store>
+                        </importcert>
+                        <password translate="label">
+                            <label>Senha do Certificado</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </password>                        
+                    </fields>
+                </acesso>
+            </groups>            
+        </easynfe_nfe>
+    </sections>
+</config>

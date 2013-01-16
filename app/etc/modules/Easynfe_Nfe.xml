@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Easynfe - NF-e. 
+ *
+ * @title      Magento Easynfe NF-e
+ * @category   General
+ * @package    Easynfe_Nfe
+ * @author     Indexa Development Team <desenvolvimento@indexainternet.com.br>
+ * @copyright  Copyright (c) 2011 Indexa - http://www.indexainternet.com.br
+ */
+ -->
+<config>
+    <modules>
+        <Easynfe_Nfe>
+            <active>true</active>
+            <codePool>local</codePool>            
+        </Easynfe_Nfe>
+    </modules>
+</config>

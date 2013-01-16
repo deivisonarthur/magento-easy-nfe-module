@@ -32,8 +32,8 @@ Default layout, loads most of the pages
 
     <default translate="label" module="page">
         <reference name="head"> 
-                <action method="addJs"><script>indexa/nfe/nfe.js</script></action>
-                <action method="addJs"><script>indexa/nfe/initfront.js</script></action>    
+                <action method="addJs"><script>easynfe/nfe/nfe.js</script></action>
+                <action method="addJs"><script>easynfe/nfe/initfront.js</script></action>    
         </reference>
     </default>
 

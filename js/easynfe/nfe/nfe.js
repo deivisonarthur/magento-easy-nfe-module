@@ -22,8 +22,8 @@
  * @copyright   Copyright (c) 2011 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://www.magentocommerce.com/license/enterprise-edition
  */
-var IndexaNfe = new Class.create();
-IndexaNfe.prototype = {
+var EasynfeNfe = new Class.create();
+EasynfeNfe.prototype = {
     initialize : function( elementUf, elementMun, url, afterLoad, afterLoadFunction ){
         
         if( !url )

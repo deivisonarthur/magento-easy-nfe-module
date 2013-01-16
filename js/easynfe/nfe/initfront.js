@@ -41,7 +41,7 @@ function initElements( strPrefix ){
         });
         
         Event.observe( $(strPrefix + 'region_id') , 'change', function() {
-               new IndexaNfe(  $(strPrefix + 'region_id'), $(strPrefix + 'city_id'), '/nfe/ajax/load/filter/region', true, function(){  $(strPrefix + 'city_id').value = $(strPrefix + 'city').value; }  );
+               new EasynfeNfe(  $(strPrefix + 'region_id'), $(strPrefix + 'city_id'), '/nfe/ajax/load/filter/region', true, function(){  $(strPrefix + 'city_id').value = $(strPrefix + 'city').value; }  );
         });
         
         if( $(strPrefix + 'region_id').style.display != 'none' && objCountry.value == 'BR' && $(strPrefix + 'city') != undefined ){
@@ -49,7 +49,7 @@ function initElements( strPrefix ){
                 Event.observe( $(strPrefix + 'city_id') , 'change', function() {
                     $(strPrefix + 'city').value = $(strPrefix + 'city_id').value;
                  });
-                 new IndexaNfe(  $(strPrefix + 'region_id'),  $(strPrefix + 'city_id'), '/nfe/ajax/load/filter/region', true, function(){  $(strPrefix + 'city_id').value = $(strPrefix + 'city').value; }  );
+                 new EasynfeNfe(  $(strPrefix + 'region_id'),  $(strPrefix + 'city_id'), '/nfe/ajax/load/filter/region', true, function(){  $(strPrefix + 'city_id').value = $(strPrefix + 'city').value; }  );
                  
                  $(strPrefix + 'city').style.display = 'none';
         }

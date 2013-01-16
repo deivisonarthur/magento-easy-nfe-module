@@ -1,0 +1,27 @@
+<!--@subject Nota Fiscal Eletrônica {{var nfe.nf}} Autorizada pelo emitente {{config path='indexa_nfe/emit/nome'}} @-->
+<!--@vars
+{"var nfe.cpf":"CPF",
+"var nfe.chave":"Chave de Acesso",
+"var nfe.serie":"serie",
+"var nfe.mod":"mod",
+"var nfe.cf":"Numero da NF"}
+@-->
+
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+<p>Prezado Cliente,</p>
+<p>Você está recebendo em anexo os arquivos (XML e PDF) da NF-e emitida pela {{config path='indexa_nfe/emit/nome'}}</p>
+<br />
+<p><strong>Dados da Nota Fiscal Eletrônica (NF-e)</strong></p>
+<br />
+<p>CPF Destinatário: {{var nfe.cpf}}</p>
+<p>Número da NF-e: {{var nfe.nf}}</p>
+<p>Modelo {{var nfe.mod}}</p>
+<p>Série {{var nfe.serie}}</p>
+<p>Chave de Acesso: {{var nfe.chave}}</p>
+<br />
+<p>Importante: a cada item atendido você receberá a respectiva NF-e.</p>
+<br />
+<p>Caso deseje saber mais acesse: <a href="http://www.nfe.fazenda.gov.br/" target="_blank">http://www.nfe.fazenda.gov.br/</a></p>
+
