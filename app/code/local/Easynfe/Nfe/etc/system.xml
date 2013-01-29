@@ -313,7 +313,7 @@
                             <show_in_store>0</show_in_store>
                         </pass>
                         <importcert translate="label">
-                          <label>Import</label>
+                          <label>Certificado</label>
                           <frontend_type>import</frontend_type>
                           <backend_model>easynfe_nfe_model_system_config_certificado</backend_model>
                           <sort_order>15</sort_order>
