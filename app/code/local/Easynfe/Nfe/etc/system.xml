@@ -297,7 +297,7 @@
                     <show_in_store>1</show_in_store>
                     <fields>
                         <chave translate="label">
-                            <label>Chave</label>
+                            <label>Identificador do Emissor</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>13</sort_order>
                             <show_in_default>1</show_in_default>
@@ -305,8 +305,8 @@
                             <show_in_store>0</show_in_store>
                         </chave>
                         <pass translate="label">
-                            <label>Senha</label>
-                            <frontend_type>text</frontend_type>
+                            <label>Senha do emissor</label>
+                            <frontend_type>password</frontend_type>
                             <sort_order>13</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
@@ -323,7 +323,7 @@
                         </importcert>
                         <password translate="label">
                             <label>Senha do Certificado</label>
-                            <frontend_type>text</frontend_type>
+                            <frontend_type>password</frontend_type>
                             <sort_order>16</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
