@@ -9,8 +9,6 @@ ATENÇÃO: Você deve fazer um backup completo da sua loja Magento e da base de 
 
 1 - Acesse https://github.com/doitsa/magento-easy-nfe-module
 
-￼
-
 Clique no ícone ZIP￼  para baixar o conteúdo do projeto em um único arquivo .ZIP
 
 Neste momento o seu browser vai iniciar o download do arquivo. Certifique-se que a pasta de destino é conhecida.
@@ -21,7 +19,7 @@ Em nosso exemplo, vamos utilizar uma ferramenta de transferência de arquivos po
 
 Abra o seu cliente de FTP (em nosso caso, usaremos o FileZilla) e acesse a raiz de sua loja virtual. Em nosso exemplo a raiz é o que ficou do lado direito da tela.
 E no lado esquerdo estamos exibindo a pasta que contém o módulo a ser instalado na loja.
-=
+
 Para transferir os arquivos, arraste o conteúdo das pastas app e js para a raiz da sua loja Magento.
 
 Você pode fechar seu client de FTP e acessar a área administrativa de sua loja Magento.
@@ -66,8 +64,8 @@ Apartir deste momento sua loja Magento está apta para emitir notas fiscais elet
 
 Para testar faça uma compra, e gere a fatura para o pedido no Magento. Neste momento a nota fiscal será gerada.
 
-=
-Troubleshooting
 
+Troubleshooting
+=======================
 Caso tenha problemas na emissão ou tenha dúvidas, entre em contato com suporte@easynfe.com.br
 
